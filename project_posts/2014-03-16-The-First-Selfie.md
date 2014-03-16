@@ -2,5 +2,5 @@ Robert Cornelius, an American pioneer in photography, produced a daguerreotype o
 
 ![The first selfie](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/RobertCornelius.jpg/914px-RobertCornelius.jpg "The first selfie - Robert Cornelius 1839")
 
-The very first recorded selfie by [Robert Cornelius](http://en.wikipedia.org/wiki/Robert_Cornelius "Robert Cornelius") 1839.
+The very first recorded selfie by [Robert Cornelius](http://en.wikipedia.org/wiki/Robert_Cornelius "Robert Cornelius") - 1839.
 
