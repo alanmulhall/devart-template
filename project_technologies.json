@@ -1,16 +1,18 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "Instagram"
         ],
         "platforms": [
-            "insert platforms"
+            "Google compute engine"
         ],
         "toolkits": [
-            "insert toolkits"
+            "Node.js",
+            "Sails.js",
+            "Firebase",
+            "AngularJS"
         ]
     },
     "themes": [
-        "insert themes"
     ]
 }
