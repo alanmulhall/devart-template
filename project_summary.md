@@ -15,7 +15,7 @@ Thoughout this project I will be exploring the effects of the Selfie and the exp
 I will be using various open source technologies to produce an emersive realtime installation inspired by the selfie.
 
 ##### Architecture
-![Architecture](project_images/architecture.jpg "Architecture")
+![Architecture](project_images/architecture2.jpg "Architecture")
 
 #### Research
 All research will be saved including Google searches, articles and inspiration. [View research.](https://delicious.com/alanmulhall/dev-art, "#selfie research")
