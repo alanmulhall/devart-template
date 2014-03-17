@@ -1,7 +1,7 @@
 # #Selfie
 
 ## Authors
-- Alan Mulhall, [@alanmulhall](http://github.com/alanmulhall, "Alan Mulhall Github")
+- Alan Mulhall, [@alanmulhall](http://github.com/alanmulhall "Alan Mulhall Github")
 
 ## Description
 #### Overview
