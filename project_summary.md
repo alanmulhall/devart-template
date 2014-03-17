@@ -22,7 +22,7 @@ I will be using various open source technologies to produce an emersive realtime
 
 A person is walking by and notices the exhibit for #selfies. They walk into the room and see all the walls and roof covered in grids of selfies from instagram.
 
-There is a nice animation on the selfie images where the color and saturation are changing. Ever so often a selfie gets replace with a new one coming from the realtime Instagram API.
+There is a nice animation on the selfie images where the color and saturation are changing. A random current selfie gets replaced with a new one coming from the realtime Instagram API.
 
 The person walks out and takes a selfie and tags it on Instagram with the tag #selfie and now they are part of the exhibit.
 
