@@ -15,16 +15,15 @@
  * @docs        :: http://sailsjs.org/#!documentation/controllers
  */
 
+Instagram = require('instagram-node-lib');
+Instagram.set('client_id', process.env.INSTAGRAM_CLIENT_ID);
+Instagram.set('client_secret', process.env.INSTAGRAM_CLIENT_SECRET);
+Instagram.set('maxSockets', 10);
+
 module.exports = {
-    
-  
 
+  find: function (req, res) {
+    res.send(Instagram.subscriptions.list());
+  }
 
-  /**
-   * Overrides for the settings in `config/controllers.js`
-   * (specific to UsersController)
-   */
-  _config: {}
-
-  
 };
