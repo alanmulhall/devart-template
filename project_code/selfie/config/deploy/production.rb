@@ -35,19 +35,9 @@ namespace :deploy do
   desc 'Start Forever'
   task :restart do
     on roles(:app) do
-      #execute "/home/alanmulhall/.nvm/v0.10.26/bin/forever start forever start -l forever.log -o out.log -e err.log /home/alanmulhall/selfie/current/project_code/selfie/app.js"
-      execute "cd /home/alanmulhall/selfie/current/project_code/selfie/ forever start app.js"
+      execute "cd /home/alanmulhall/selfie/current/project_code/selfie/ && forever start app.js"
     end
   end
-
-  #desc 'Restart Forever'
-  #task :restart do
-    #on roles(:app) do
-      #stop
-      #sleep 5
-      #start
-    #end
-  #end
 
   before :restart, 'deploy:npm_install'
 
