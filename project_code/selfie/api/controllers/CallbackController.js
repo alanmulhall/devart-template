@@ -1,5 +1,5 @@
 /**
- * SelfieController
+ * CallbackController
  *
  * @module      :: Controller
  * @description	:: A set of functions called `actions`.
@@ -18,28 +18,26 @@
 Instagram = require('instagram-node-lib');
 Instagram.set('client_id', process.env.INSTAGRAM_CLIENT_ID);
 Instagram.set('client_secret', process.env.INSTAGRAM_CLIENT_SECRET);
-Instagram.set('callback_url', 'http://23.251.152.185/callback/index');
-Instagram.set('maxSockets', 10);
 
 module.exports = {
+  
+  /**
+   * Action blueprints:
+   *    `/callback/index`
+   *    `/callback`
+   */
+   index: function (req, res) {
+    Instagram.subscriptions.handshake(req, res);  
+  },
 
-  find: function (req, res) {
-    Instagram.subscriptions.subscribe({ object: 'tag', object_id: 'blue', verify_token: 'my-token' });
-    //Instagram.subscriptions.list();
 
-    //Instagram.tags.info({
-        //name: 'blue',
-        //complete: function(data){
-          //console.log(data);
-        //}
-    //});
-    res.send('<h1>hello world</h1>');
-  }
+
 
   /**
    * Overrides for the settings in `config/controllers.js`
-   * (specific to SelfieController)
+   * (specific to CallbackController)
    */
-  //_config: {}
+  _config: {}
 
+  
 };
