@@ -16,9 +16,9 @@ module.exports = {
   },
 
   create: function (req, res) {
-    console.dir(req);
     var selfie = Instagram.tags.recent({ name: 'selfie', count: 1 });
-    Selfie.create(selfie).done(function (err, selfie) {
+    console.log("raw selfie returned: ", selfie[0]);
+    Selfie.create(selfie[0]).done(function (err, selfie) {
       if (err) {
         return console.log(err);
       } else {
