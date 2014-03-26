@@ -12,6 +12,19 @@ module.exports = {
 
   subscribe: function (req, res) {
     Instagram.subscriptions.subscribe({ object: 'tag', object_id: 'selfie', verify_token: 'selfie-token' });
+    res.send('subscribed');
+  },
+
+  create: function (req, res) {
+    console.dir(req);
+    var selfie = Instagram.tags.recent({ name: 'selfie', count: 1 });
+    Selfie.create(selfie).done(function (err, selfie) {
+      if (err) {
+        return console.log(err);
+      } else {
+        return console.log("Selfie created: ", selfie);
+      }
+    });
   }
 
 };
