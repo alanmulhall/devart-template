@@ -28,12 +28,23 @@
 
 module.exports.routes = {
 
-  // By default, your root route (aka home page) points to a view
-  // located at `views/home/index.ejs`
-  // 
-  // (This would also work if you had a file at: `/views/home.ejs`)
   '/': {
     view: 'home/index'
+  },
+
+  'get /selfie/callback': {
+    controller: 'Selfie',
+    action: 'callback'
+  },
+
+  'post /selfie/callback': {
+    controller: 'Selfie',
+    action: 'Create'
+  },
+
+  'get /selfie/subscribe': {
+    controller: 'Selfie',
+    action: 'subscribe'
   }
 
   /*
