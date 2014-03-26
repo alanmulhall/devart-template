@@ -11,7 +11,7 @@ module.exports = {
   },
 
   subscribe: function (req, res) {
-    Instagram.subscriptions.subscribe({ object: 'tag', object_id: 'blue', verify_token: 'my-token' });
+    Instagram.subscriptions.subscribe({ object: 'tag', object_id: 'selfie', verify_token: 'selfie-token' });
   }
 
 };
