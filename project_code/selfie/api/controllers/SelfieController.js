@@ -16,7 +16,7 @@ module.exports = {
   },
 
   create: function (req, res) {
-    var selfie = Instagram.media.search({ media_id: 53324340c037da943cdd69a2 });
+    var selfie = Instagram.media.search({ media_id: '53324340c037da943cdd69a2' });
     console.log("the response is: ", res);
     Selfie.create(selfie.data).done(function (err, selfie) {
       if (err) {
