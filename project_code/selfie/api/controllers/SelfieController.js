@@ -17,12 +17,13 @@ module.exports = {
 
   create: function (req, res) {
     var selfie = Instagram.tags.recent({ name: 'selfie', count: 1 });
-    console.log("raw selfie returned: ", selfie[0]);
-    Selfie.create(selfie[0]).done(function (err, selfie) {
+    Selfie.create(selfie.data[0]).done(function (err, selfie) {
       if (err) {
         return console.log(err);
       } else {
-        return console.log("Selfie created: ", selfie);
+        console.log("Selfie created: ********************************");
+        console.log("Selfie created: ", selfie.data[0]);
+        console.log("Selfie created: ++++++++++++++++++++++++++++++++");
       }
     });
   }
